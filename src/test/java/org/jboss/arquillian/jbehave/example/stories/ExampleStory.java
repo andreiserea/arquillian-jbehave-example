@@ -40,7 +40,7 @@ public class ExampleStory extends AbstractArquillianStory {
 		Collection<JavaArchive> extraLibs = DependencyResolvers
 			.use(MavenDependencyResolver.class).goOffline()
 			.loadMetadataFromPom("pom.xml")
-			.artifact("org.jboss.arquillian:arquillian-jbehave:jar:0.0.1-SNAPSHOT")
+			.artifact("org.jboss.arquillian:arquillian-jbehave:jar:1.0.0")
 			.resolveAs(JavaArchive.class);
 		
 		/* add extra libraries */
