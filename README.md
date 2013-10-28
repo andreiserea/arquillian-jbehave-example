@@ -14,7 +14,7 @@ Steps to use this project and get started with the arquillian-jbehave extended i
   Most important dependency, it includes the Arquillian-Jbehave JUnit runner class along with some small extensions.<br/>
 2.Import the Maven project in your favorite IDE. Of course, you can run the tests from maven but you won't get the nice visual diagram of the scenarios and their steps.<br/>
 3.Run the ExampleStory.java class a JUnit Test case. This will deploy the small TestService class with required resources (story file) and will run the test inside arquillian.<br/><br/>
-
+<img src="junit.png"/>
 Important things to notice:<br/>
 1. The @RunWith annotation with ArquillianJbehaveRunner.<br/>
 2. The @StoryFile annotation which specifies the path to the story file, without the .story extension. The story file locator based on this annotation is AnnotationStoryPathResolver, which you can configure with a default extension and a default stories folder. In this case, the default folder is "stories"
