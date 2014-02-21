@@ -12,7 +12,8 @@ Steps to use this project and get started with the arquillian-jbehave extended i
   This provides a better feedback from JUnit when running stories -step granularity (you'll see a tree-like structure in JUnit with stories as parents and scenarios with steps as children)<br/>
   1.3 https://github.com/andreiserea/arquillian-jbehave
   Most important dependency, it includes the Arquillian-Jbehave JUnit runner class along with some small extensions.<br/>
-2.Import the Maven project in your favorite IDE. Of course, you can run the tests from maven but you won't get the nice visual diagram of the scenarios and their steps.<br/>
+  1.4 Do a mvn install on all the above projects so they get pushed to your local maven repo.
+2.Checkout and import this project as a Maven project in your favorite IDE. Of course, you can run the tests from maven but you won't get the nice visual diagram of the scenarios and their steps.<br/>
 3.Run the ExampleStory.java class a JUnit Test case. This will deploy the small TestService class with required resources (story file) and will run the test inside arquillian.<br/>
 <img src="junit.png"/><br/>
 Important things to notice:<br/>
@@ -27,4 +28,4 @@ So, although you are running multiple stories in multiple test classes, for Arqu
 5. The steps instances are static instances! This is because Arquillian would otherwise instantiate the steps classes each time a step has to run and you wouldn't have any "state" across a scenario.<br/><br/>
 
 
-That's the short story of the example. For more info read the readme for arquillian-jbehave integration project on github (https://github.com/andreiserea/arquillian-jbehave) or contact me directly.<br/>
+That's the short story of the example. For more info read the readme for arquillian-jbehave integration project on github (https://github.com/andreiserea/arquillian-jbehave) or contact me directly (andrei dot serea at gmail).<br/>
